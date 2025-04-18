@@ -15,7 +15,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     gap: 30px;
 }
 .header-wrapper {
@@ -117,7 +117,7 @@ h12{
 }
 
 .card {
-    width:230px; 
+    width:250px; 
     height: 130px;
     background-color: #3a3737; 
     border-radius: 10px; 
@@ -230,6 +230,12 @@ option {
     margin: 0;
     text-align: center;
   }
+
+  .footer-list img{
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+  }
   
   .footer-list li {
     margin: 8px 0;
@@ -237,8 +243,9 @@ option {
   
   .footer-list a {
     text-decoration: none;
-    color: #7a7676;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #b8b3b3;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
   }
   
   .footer-list a:hover {
@@ -247,9 +254,9 @@ option {
   
   h5 {
     text-decoration: none;
-    color: #7a7676;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 17px;
+    color: #b8b3b3;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
 /*MEDIAQUERIES*/
 @media (min-width: 360px) and (max-width: 481px) {
@@ -259,6 +266,7 @@ option {
         background-image: url('./bac.jpg');
 
     }
+    
     main{
         overflow-x: hidden;
     }
@@ -379,12 +387,13 @@ option {
         font-size: 14px; 
     }
 }
-@media (min-width: 768px) and (max-width: 912px) {
+@media (min-width: 541px) and (max-width: 912px) {
     body {
         overflow-x: hidden;
         background-image: url(./fff.jpg);
 
     }
+
     .header-wrapper {
         display:flex;
         flex-direction: row;
@@ -422,7 +431,7 @@ option {
     select {
         width: 60%;
         position: relative;
-        left:80px;
+        left:40px;
         padding: 20px;
         background-color: #2a2a2a;
         color: #fdfdfd;
@@ -438,7 +447,7 @@ option {
         font-size: 20px;
         color: #fdfdfd;
         position: relative;
-        left: 90px;
+        left: 30px;
     }
     .card {
         width:400px; 
@@ -452,8 +461,259 @@ option {
     }
 
 }
-    
+@media (max-width: 344px) {
+    body {
+        overflow-x: hidden;
+        background-image: url('./bac.jpg');
 
-
+    }
+    main{
+        overflow-x: hidden;
+    }
+    .header-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+        width:100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
     
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+        min-width: 40px;
+        min-height: 40px;
+        background-image: url("./menu.png"); 
+        background-size: 35px 35px;
+        background-repeat: no-repeat;
+        background-position: 204px;
+        overflow-x: hidden;
+    }
+    .content-section{
+        overflow-x: hidden;
+    }
+    
+    .DOCS, .about {
+        font-size: 16px;
+        color: #272424;
+        position: relative;
+        left: 100px;
+        top: 1px;
+
+    }
+    .cards-container{
+        overflow-x: hidden;
+    }
+    .support {
+        display: none;
+    }
   
+    .text-wrapper {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      text-align: center;
+    }
+    h1{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 50px;
+        color: #3a3737;
+        position: relative;
+        right: 10px;
+    }
+    select {
+        width: 60%;
+        position: relative;
+        left:50px;
+        padding: 20px;
+        background-color: #2a2a2a;
+        color: #fdfdfd;
+        border: 2px solid #e97832;
+        border-radius: 5px;
+        font-size: 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    h16{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        color: #fdfdfd;
+        position: relative;
+        left: 50px;
+    }
+    .card {
+        width:250px; 
+        height: 130px;
+        background-color: #3a3737; 
+        border-radius: 10px; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        font-size: 0.2rem;
+        position: relative;
+        right: 10px;
+    }
+    .footer-section {
+        padding: 15px;
+        overflow-x: hidden;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center; 
+        gap: 15px; 
+        max-width: 100%;
+    }
+
+    .footer-list {
+        text-align: center;
+    }
+
+    .footer-list li {
+        margin: 6px 0;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
+    .footer-list a {
+        font-size: 14px; 
+    }
+
+}
+@media (min-width: 540px) and (max-width: 540px) {
+    body {
+        overflow-x: hidden;
+        background-image: url('./bac.jpg');
+
+    }
+    main{
+        overflow-x: hidden;
+    }
+    .header-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+        width:100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+        min-width: 40px;
+        min-height: 40px;
+        background-image: url("./menu.png"); 
+        background-size: 35px 35px;
+        background-repeat: no-repeat;
+        background-position: 370px;
+        overflow-x: hidden;
+    }
+    .content-section{
+        overflow-x: hidden;
+    }
+    
+    .DOCS, .about {
+        font-size: 16px;
+        color: #272424;
+        position: relative;
+        left: 250px;
+        top: 1px;
+
+    }
+    .cards-container{
+        overflow-x: hidden;
+    }
+    .support {
+        display: none;
+    }
+  
+    .text-wrapper {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      text-align: center;
+    }
+    h1{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 80px;
+        color: #3a3737;
+        position: relative;
+        right: 10px;
+    }
+    select {
+        width: 60%;
+        position: relative;
+        left:50px;
+        padding: 20px;
+        background-color: #2a2a2a;
+        color: #fdfdfd;
+        border: 2px solid #e97832;
+        border-radius: 5px;
+        font-size: 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    h16{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        color: #fdfdfd;
+        position: relative;
+        left: 50px;
+    }
+    .card {
+        width:250px; 
+        height: 130px;
+        background-color: #3a3737; 
+        border-radius: 10px; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        font-size: 0.2rem;
+        position: relative;
+        right: 10px;
+    }
+    .footer-section {
+        padding: 15px;
+        overflow-x: hidden;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center; 
+        gap: 15px; 
+        max-width: 100%;
+    }
+
+    .footer-list {
+        text-align: center;
+    }
+
+    .footer-list li {
+        margin: 6px 0;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
+    .footer-list a {
+        font-size: 14px; 
+    }
+
+
+}
+
