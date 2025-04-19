@@ -219,7 +219,7 @@ option {
   .footer-container {
     display: flex;
     justify-content: space-around;
-    max-width: 700px;
+    max-width: 1000px;
     margin: 0 auto;
     gap: 20px;
   }
@@ -232,13 +232,14 @@ option {
   }
 
   .footer-list img{
-    width: 200px;
+    width: 350px;
     height: auto;
     object-fit: contain;
   }
   
   .footer-list li {
     margin: 8px 0;
+    direction:initial;
   }
   
   .footer-list a {
@@ -258,13 +259,12 @@ option {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
-/*MEDIAQUERIES*/
+/*MEDIAQUERIES CELULARES*/
 @media (min-width: 360px) and (max-width: 481px) {
     
     body {
         overflow-x: hidden;
         background-image: url('./bac.jpg');
-
     }
     
     main{
@@ -310,7 +310,14 @@ option {
     }
     .cards-container{
         overflow-x: hidden;
+        display: flex;
+        flex-wrap: column;  
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        padding: 10px 5px;
     }
+    
     .support {
         display: none;
     }
@@ -349,15 +356,58 @@ option {
         position: relative;
         left: 90px;
     }
+    .card-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-text-content{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+    
+    .card-img-top {
+        width: 250px;
+        height: 230px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    
+    .card-body {
+        padding: 10px;
+    }
     .card {
-        width:300px; 
-        height: 130px;
+        width:250px; 
+        height: 530px;
         background-color: #3a3737; 
         border-radius: 10px; 
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
         font-size: 0.2rem;
-        position: relative;
-        left: 5px;
+        
+    }
+    h7 {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #fcfcfc;
+        font-size: 35px;
+    }
+    h8{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        color: #fcfafa;
+    }
+    p.card-text{
+        font-family: Arial, sans-serif;
+        color: #8a8585;
+        margin: 5px 0;
+        font-size: 20px;
+        padding: 10px;
+    }
+    h9{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #fcfafa;
+        margin: 5px 0;
+        font-size: 20px;
     }
     .footer-section {
         padding: 15px;
@@ -378,6 +428,11 @@ option {
     .footer-list li {
         margin: 6px 0;
     }
+    .footer-list img{
+        width: 250px;
+        height: auto;
+        object-fit: contain;
+      }
 
     h5 {
         font-size: 14px;
@@ -387,6 +442,8 @@ option {
         font-size: 14px; 
     }
 }
+
+/*MEDIAQUARIES TABLETS*/
 @media (min-width: 541px) and (max-width: 912px) {
     body {
         overflow-x: hidden;
@@ -449,9 +506,39 @@ option {
         position: relative;
         left: 30px;
     }
+    .cards-container{
+        overflow-x: hidden;
+        display: flex;
+        flex-wrap: row;  
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        padding: 10px 5px;
+    }
+    .card-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-text-content{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+    
+    .card-img-top {
+        width: 250px;
+        height: 230px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    
+    .card-body {
+        padding: 10px;
+    }
     .card {
-        width:400px; 
-        height: 130px;
+        width:250px; 
+        height: 530px;
         background-color: #3a3737; 
         border-radius: 10px; 
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
@@ -459,8 +546,64 @@ option {
         position: relative;
         left: 5px;
     }
-
+h7 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fcfcfc;
+    font-size: 35px;
 }
+h8{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: #fcfafa;
+}
+p.card-text{
+    font-family: Arial, sans-serif;
+    color: #8a8585;
+    margin: 5px 0;
+    font-size: 20px;
+    padding: 10px;
+}
+h9{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fcfafa;
+    margin: 5px 0;
+    font-size: 20px;
+}
+.footer-section {
+    padding: 15px;
+    overflow-x: hidden;
+}
+
+.footer-container {
+    flex-direction: column;
+    align-items: center; 
+    gap: 15px; 
+    max-width: 100%;
+}
+
+.footer-list {
+    text-align: center;
+}
+
+.footer-list li {
+    margin: 6px 0;
+}
+.footer-list img{
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+  }
+
+h5 {
+    font-size: 14px;
+}
+
+.footer-list a {
+    font-size: 14px; 
+}
+}
+
+/*MEDIAQUARIES CELULARES MÁS PEQUEÑOS*/
 @media (max-width: 344px) {
     body {
         overflow-x: hidden;
@@ -510,7 +653,15 @@ option {
     }
     .cards-container{
         overflow-x: hidden;
+        display: flex;
+        flex-wrap: column;  
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        padding: 10px 5px;
     }
+    
+    
     .support {
         display: none;
     }
@@ -585,6 +736,15 @@ option {
 
     .footer-list a {
         font-size: 14px; 
+    }
+    .footer-list img{
+        width: 250px;
+        height: auto;
+        object-fit: contain;
+      }
+
+    h5 {
+        font-size: 10px;
     }
 
 }
